@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>오디오 테스트</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음원 듣기</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+    h2 { margin-bottom: 20px; color: #333; }
+    audio { width: 80%; max-width: 400px; }
+  </style>
 </head>
 <body>
-    <h1>오디오 재생 테스트</h1>
-    <audio controls preload="auto">
-        <source src="Ps10.mp3" type="audio/mpeg">
-        <source src="audio.mp3" type="audio/mpeg">
-        브라우저가 오디오 태그를 지원하지 않습니다.
-    </audio>
+  <h2>🎵 오디오 재생하기</h2>
+  <!-- 파일 이름을 audio.mp3 로 간단하게 연결 -->
+  <audio controls src="audio.mp3"></audio>
 </body>
 </html>
